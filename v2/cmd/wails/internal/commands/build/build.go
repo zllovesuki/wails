@@ -26,12 +26,12 @@ import (
 
 // AddBuildSubcommand adds the `build` command for the Wails application
 func AddBuildSubcommand(app *clir.Cli, w io.Writer) {
+	command := app.NewSubCommand("build", "Builds the application")
 
 	outputType := "desktop"
-
 	validTargetTypes := slicer.String([]string{"desktop", "hybrid", "server"})
 
-	command := app.NewSubCommand("build", "Builds the application")
+	command.StringFlag("outputType", fmt.Sprintf("Type of binary %s", validTargetTypes.AsSlice()), &outputType)
 
 	// Setup noPackage flag
 	noPackage := false
