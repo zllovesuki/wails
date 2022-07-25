@@ -1,5 +1,5 @@
-//go:build dev
-// +build dev
+//go:build dev && desktop
+// +build dev,desktop
 
 package app
 

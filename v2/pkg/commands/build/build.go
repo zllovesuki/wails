@@ -104,7 +104,7 @@ func Build(options *Options) (string, error) {
 	switch projectData.OutputType {
 	case "desktop":
 		builder = newDesktopBuilder(options)
-	case "dev":
+	case "dev", "hybrid", "server":
 		builder = newDesktopBuilder(options)
 	default:
 		return "", fmt.Errorf("cannot build assets for output type %s", projectData.OutputType)

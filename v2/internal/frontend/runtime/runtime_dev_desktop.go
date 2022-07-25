@@ -1,5 +1,5 @@
-//go:build dev || bindings || (!dev && !production && !bindings)
-// +build dev bindings !dev,!production,!bindings
+//go:build dev || hybrid || server || bindings || (!dev && !production && !bindings)
+// +build dev hybrid server bindings !dev,!production,!bindings
 
 package runtime
 
