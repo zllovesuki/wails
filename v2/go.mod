@@ -43,6 +43,7 @@ require (
 	github.com/bitfield/script v0.19.0
 	github.com/charmbracelet/glamour v0.5.0
 	github.com/go-ole/go-ole v1.2.6
+	github.com/labstack/gommon v0.3.1
 )
 
 require (
@@ -57,7 +58,6 @@ require (
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/kevinburke/ssh_config v0.0.0-20201106050909-4977a11b4351 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
-	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/logrusorgru/aurora v0.0.0-20181002194514-a7b3b318ed4e // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
